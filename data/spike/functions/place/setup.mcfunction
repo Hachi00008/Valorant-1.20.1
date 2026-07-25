@@ -18,6 +18,5 @@ bossbar set valorant:spike name "スパイクを設置しています..."
 execute store result bossbar valorant:spike max run scoreboard players get $Max Spike
 execute store result bossbar valorant:spike value run scoreboard players set @s Spike.Sneak 0
 
-# TODO: ここは味方全員見れるようにするべきだけど、まだチーム関連ができてないらしいのでひとまず @s
-bossbar set valorant:spike players @s
+bossbar set valorant:spike players @a[tag=AttackerSide]
 bossbar set valorant:spike visible true
