@@ -102,6 +102,12 @@
 # エージェント
     scoreboard objectives add Agent dummy
 
+# ゲームコア
+    scoreboard objectives add GameCore dummy
+
+# 生存人数
+    scoreboard objectives add Alive_Players dummy
+
 # Tellraw Prefixの設定
     data modify storage global: Prefix.Info set value "§a[Valorant] INFO>>>§r "
     data modify storage global: Prefix.Caution set value "§e[Valorant] CAUTION>>>§r "

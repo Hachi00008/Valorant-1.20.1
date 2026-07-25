@@ -8,6 +8,9 @@
 # Item本体
     data modify storage asset:item Item set value "minecraft:beacon"
 
+# 武器タイプ
+    data modify storage asset:item WeaponType set value "Spike"
+
 # 弾倉の中の弾数(Option)
     #data modify storage asset:item AmmoCount set value 
 

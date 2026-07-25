@@ -4,6 +4,9 @@
 #
 # @within function player:hurt/
 
+# タグの付与
+    tag @s add Dead
+
 # 殺した人の武器のダメージを取得
     execute store result score @s AttackerWeaponDamage on attacker run data get entity @s SelectedItem.tag.GunDamage 10
 
@@ -19,6 +22,9 @@
 
 # デバッグ
     #tellraw @a [{"text": "TakenDamage: "},{"score": {"name": "@s","objective": "TakenDamage"}},{"text": " | AttackerWeaponDamage: "},{"score": {"name": "@s","objective": "AttackerWeaponDamage"}}]
+
+# チーム数監視
+    function game_core:game_tick/battle_phase/team_player
 
 # リセット
     #scoreboard players set @s TakenDamage 0

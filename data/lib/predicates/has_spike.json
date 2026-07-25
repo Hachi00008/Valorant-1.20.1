@@ -15,7 +15,8 @@
               "minecraft:beacon"
             ]
           }
-        }
+        },
+        "nbt": "{Tags:[\"AttackerSide\"]}"
       }
     }
   ]

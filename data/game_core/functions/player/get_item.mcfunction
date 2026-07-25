@@ -10,6 +10,7 @@
 # そのアイテムの情報をかんし
     execute if data entity @e[type=item,sort=nearest,limit=1,distance=..1] Item.tag{WeaponType:"SideArm"} run function game_core:player/get_sidearm
     execute unless entity @s[tag=NewGetItem] if data entity @e[type=item,sort=nearest,limit=1,distance=..1] Item.tag{WeaponType:"MainArm"} run function game_core:player/get_mainarm
+    execute if entity @s[tag=AttackerSide] unless entity @s[tag=NewGetItem] if data entity @e[type=item,sort=nearest,limit=1,distance=..1] Item.tag{WeaponType:"Spike"} run function game_core:player/get_spike
 
 # アイテムkill
     kill @e[type=item,sort=nearest,limit=1,distance=..1]

@@ -10,6 +10,7 @@ execute if score $Timer Spike = $TripleSFX Spike run scoreboard players set $SFX
 execute unless score $Timer Spike = $TimeOver Spike run return 0
 
 # TODO: 攻めの勝利処理を書く
+function game_core:game_tick/battle_phase/get_round/attacker
 particle minecraft:explosion ~ ~1 ~
 playsound entity.generic.explode master @a ~ ~ ~
 
