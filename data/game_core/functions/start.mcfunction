@@ -17,6 +17,9 @@
     scoreboard players set $AttackerSide GameCore 1
     scoreboard players set $Time Timer 600
 
+# スパイク処理のリセットもろもろ
+    function spike:reset
+
 # タグ削除
     tag @a remove AttackerSide
 
