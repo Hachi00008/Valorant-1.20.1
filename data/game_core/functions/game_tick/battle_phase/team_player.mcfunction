@@ -9,8 +9,8 @@
     execute store result score $Blue Alive_Players if entity @a[team=Blue,tag=!Dead]
 
 # チーム内の人数が0の時の処理
-    execute if score $Red Alive_Players matches 0 run function game_core:game_tick/battle_phase/extinction/red
-    execute if score $Blue Alive_Players matches 0 run function game_core:game_tick/battle_phase/extinction/blue
+    execute if score $Red Alive_Players matches 0 run function game_core:game_tick/battle_phase/extinction/blue
+    execute if score $Blue Alive_Players matches 0 run function game_core:game_tick/battle_phase/extinction/red
 
 # リセット
     scoreboard players reset $Red Alive_Players

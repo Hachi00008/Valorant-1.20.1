@@ -1,0 +1,1 @@
+give @p minecraft:armor_stand{EntityTag:{id:"armor_stand",NoBasePlate:true,Small:true,Marker:true,CustomNameVisible:true,CustomName:'{"text":"Shop Pos","color":"green"}',Tags:["Shop_Pos"]}} 1

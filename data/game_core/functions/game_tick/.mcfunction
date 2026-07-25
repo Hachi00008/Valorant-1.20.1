@@ -10,6 +10,9 @@
 # 戦闘フェーズ処理
     execute if data storage game: {Phase:"Battle"} run function game_core:game_tick/battle_phase/
 
+# 待機フェーズ処理
+    execute if data storage game: {Phase:"Wait"} run function game_core:game_tick/wait/
+
 # ドロップアイテム処理
     execute as @e[type=item] run data modify entity @s PickupDelay set value 2
 

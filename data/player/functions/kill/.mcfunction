@@ -2,7 +2,7 @@
 #
 # プレイヤーがキルをした時の処理
 #
-# @within advancements core:player_kill_entity
+# @within function player:hurt/death
 
 # キル回数
     scoreboard players add @s KillCount 1
@@ -19,4 +19,3 @@
 
 # リセット
     execute if score @s KillCount matches 5.. run scoreboard players set @s KillCount 0
-    advancement revoke @s only player:player_kill_entity

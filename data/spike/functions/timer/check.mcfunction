@@ -11,8 +11,9 @@ execute unless score $Timer Spike = $TimeOver Spike run return 0
 
 # TODO: 攻めの勝利処理を書く
 function game_core:game_tick/battle_phase/get_round/attacker
+effect give @a lrtactical:blinded 5 0 true
 particle minecraft:explosion ~ ~1 ~
-playsound entity.generic.explode master @a ~ ~ ~
+playsound entity.generic.explode master @a ~ ~ ~ 1.0 0.1
 
 tag @s remove Spike
 function spike:defuse/reset

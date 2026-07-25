@@ -1,20 +1,11 @@
-#> game_core:game_tick/buy_phase/
+#> game_core:game_tick/wait/
 #
-# 購入フェーズ時の処理
+# 待機時の処理
 #
 # @within function game_core:game_tick/
 
 # スコアを減らす
     execute if score $Time Timer matches 1.. run scoreboard players remove $Time Timer 1
-
-# 体力強制変換
-    scoreboard players set @a Health 100
-
-# バリア作成
-    execute if score $Time Timer matches 1.. at @e[tag=Phase_Wall] run function game_core:game_tick/buy_phase/phase_wall
-
-# 初期化処理
-    execute if score $Time Timer matches 599 run function game_core:game_tick/buy_phase/init
 
 # カウントダウン
     execute if score $Time Timer matches 79 as @a at @s run playsound ui.button.click record @s ~ ~ ~ 1.0 1.5
@@ -23,4 +14,4 @@
     execute if score $Time Timer matches 19 as @a at @s run playsound ui.button.click record @s ~ ~ ~ 1.0 1.2
 
 # タグを削除
-    execute if score $Time Timer matches 0 run function game_core:game_tick/buy_phase/finish
+    execute if score $Time Timer matches 0 run function game_core:game_tick/battle_phase/phase_change
