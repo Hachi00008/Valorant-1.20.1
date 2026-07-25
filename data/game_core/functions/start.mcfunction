@@ -35,6 +35,9 @@
 
 clear @a
 
+# カラムビット
+    execute as @a run function asset:item/carambit/give/
+
 # クラシック
     execute as @a run function asset:item/classic/give/
 

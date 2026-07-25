@@ -23,7 +23,7 @@
         execute unless data storage game: {OverTime:1b} run function game_core:game_tick/battle_phase/not_overtime
 
 # ストレージがEndingじゃないなら通常通り進行
-    execute unless data storage game: {Phase:"Ending"} run function game_core:game_tick/battle_phase/phase_change_wait
+    execute unless data storage game: {Phase:"Ending"} run function game_core:game_tick/battle_phase/phase_change
 
 # リセット
     scoreboard players reset $MaxGetRound Temporary

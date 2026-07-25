@@ -17,4 +17,5 @@
     execute as @e[type=item] run data modify entity @s PickupDelay set value 2
 
 # タイマー描画処理(一番最後に実行)
+    bossbar set valorant:timer players @a
     function game_core:game_tick/draw_timer

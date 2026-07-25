@@ -16,6 +16,7 @@
 
 # アイテム生成
     execute unless entity @s[tag=Shop_Phase] in world:system_area run loot give @s mine 0 0 0 debug_stick
+    execute if entity @s[tag=Shop_Phase] if data storage asset:item {WeaponType:"Melee"} in world:system_area run item replace entity @s hotbar.0 from block 0 0 0 container.0
     execute if entity @s[tag=Shop_Phase] if data storage asset:item {WeaponType:"SideArm"} in world:system_area run item replace entity @s hotbar.1 from block 0 0 0 container.0
     execute if entity @s[tag=Shop_Phase] if data storage asset:item {WeaponType:"MainArm"} in world:system_area run item replace entity @s hotbar.2 from block 0 0 0 container.0
     

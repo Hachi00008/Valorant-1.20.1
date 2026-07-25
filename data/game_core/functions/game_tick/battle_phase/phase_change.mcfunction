@@ -21,7 +21,8 @@
 
 # タグの削除
     tag @a remove Dead
-    gamemode adventure @a
+    gamemode adventure @a[team=Red]
+    gamemode adventure @a[team=Blue]
     
 # スパイク召喚
     execute in world:system_area run item replace block 0 0 0 container.0 with beacon{display:{Name:'[{"translate": "item.valorant.spike","color":"aqua","bold":true}]',Lore:['[{"text":"このアイテムを持ってスニークすることで設置する。","color":"gray","italic":false}]']},WeaponType:"Spike"}

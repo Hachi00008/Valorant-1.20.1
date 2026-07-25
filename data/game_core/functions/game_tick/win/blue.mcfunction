@@ -8,3 +8,4 @@
 
 # ストレージの変更
     data modify storage game: Phase set value "Ending"
+    data modify storage game: state set value "Waiting"
