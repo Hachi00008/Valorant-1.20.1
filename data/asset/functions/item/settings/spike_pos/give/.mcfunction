@@ -1,1 +1,1 @@
-give @p minecraft:armor_stand{EntityTag:{id:"armor_stand",Invisible:true,NoBasePlate:true,Small:true,Marker:true,CustomNameVisible:true,CustomName:'{"text":"Spike Pos","color":"auqa"}',Tags:["Spike_Pos"]}} 1
+give @p minecraft:armor_stand{EntityTag:{id:"armor_stand",Invisible:true,NoBasePlate:true,Small:true,Marker:true,CustomNameVisible:true,CustomName:'{"text":"Spike Pos","color":"aqua"}',Tags:["Spike_Pos"]}} 1

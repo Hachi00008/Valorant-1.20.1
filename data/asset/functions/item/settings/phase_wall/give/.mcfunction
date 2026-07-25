@@ -1,1 +1,1 @@
-give @p minecraft:armor_stand{EntityTag:{id:"armor_stand",Invisible:true,Small:true,Marker:true,CustomNameVisible:true,CustomName:'{"text":"Phase Wall","color":"yellow"}',Tags:["Phase_Wall"]}} 1
+give @p minecraft:armor_stand{EntityTag:{id:"armor_stand",Invisible:true,Small:true,Marker:true,CustomNameVisible:true,CustomName:'{"text":"Phase Wall","color":"yellow"}',Tags:["Phase_Wall"]},display:{Name:'{"text":"Phase Wall","color":"yellow"}'}} 1

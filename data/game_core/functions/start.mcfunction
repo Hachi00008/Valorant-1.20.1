@@ -48,4 +48,5 @@ clear @a
     give @a tacz:ammo_box{AllTypeCreative:1b}
 
 # ゲームモード変更
-    gamemode adventure @a
+    gamemode adventure @a[team=Red]
+    gamemode adventure @a[team=Blue]

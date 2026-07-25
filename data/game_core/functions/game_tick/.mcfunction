@@ -18,4 +18,5 @@
 
 # タイマー描画処理(一番最後に実行)
     bossbar set valorant:timer players @a
+    bossbar set valorant:timer visible true
     function game_core:game_tick/draw_timer

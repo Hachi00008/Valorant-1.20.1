@@ -14,3 +14,4 @@
     gamerule fallDamage false
     gamerule keepInventory true
     gamerule doImmediateRespawn true
+    gamerule spawnRadius 0
