@@ -8,7 +8,7 @@
     data modify storage game: Phase set value "Wait"
 
 # スコアの変更
-    scoreboard players set $Time Timer 100
+    scoreboard players set $Time Timer 160
     scoreboard players set @a Health 100
 
 # スパイク削除

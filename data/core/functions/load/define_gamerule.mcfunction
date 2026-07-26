@@ -12,6 +12,6 @@
     gamerule doWeatherCycle false
     gamerule mobGriefing false
     gamerule fallDamage false
-    gamerule keepInventory true
+    gamerule keepInventory false
     gamerule doImmediateRespawn true
     gamerule spawnRadius 0

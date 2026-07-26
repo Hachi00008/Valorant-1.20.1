@@ -11,6 +11,9 @@
 # Forceload
     # System Area
         execute in world:system_area run forceload add -1 -1 0 0
+    # Ascent
+        execute in overworld run forceload add -362 -129 -348 -113
+        execute in overworld run forceload add -251 -97 -271 -113
 
 # シュルカーボックス
     execute in world:system_area run setblock 0 0 0 lime_shulker_box

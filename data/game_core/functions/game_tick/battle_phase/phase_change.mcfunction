@@ -28,3 +28,6 @@
     execute in world:system_area run item replace block 0 0 0 container.0 with beacon{display:{Name:'[{"translate": "item.valorant.spike","color":"aqua","bold":true}]',Lore:['[{"text":"このアイテムを持ってスニークすることで設置する。","color":"gray","italic":false}]']},WeaponType:"Spike"}
     execute in world:system_area run loot spawn 0 1 0 mine 0 0 0 debug_stick
     execute in world:system_area positioned 0 0 0 as @e[type=item,distance=..1,limit=1] at @e[tag=Spike_Pos,limit=1] run tp @s ~ ~ ~
+
+# タイトル
+    title @a title ["",{"text": "\uE007","font": "ui"}]

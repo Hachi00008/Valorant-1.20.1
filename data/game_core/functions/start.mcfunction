@@ -5,6 +5,7 @@
 # ストレージの変更
     data modify storage game: state set value "Playing"
     data modify storage game: Phase set value "Buy"
+    data modify storage game: OverTime set value 0b
 
 # スコアリセット
     scoreboard players set @a KillCount 0

@@ -6,3 +6,6 @@
 
 # ゲームモード変更
     gamemode adventure @s
+
+# テレポート
+    tp @s -305 -28 171

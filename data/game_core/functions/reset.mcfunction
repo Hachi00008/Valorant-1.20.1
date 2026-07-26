@@ -11,6 +11,7 @@
 
 # ストレージの変更
     data modify storage game: state set value "Waiting"
+    data modify storage game: OverTime set value 0b
 
 # スコアリセット
     scoreboard players set @a KillCount 0

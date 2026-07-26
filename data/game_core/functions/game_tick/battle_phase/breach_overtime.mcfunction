@@ -12,3 +12,6 @@
 
 # 攻守交代
     function game_core:game_tick/battle_phase/attack_swap/swap_attacker
+
+# メッセージ
+    tellraw @a "Test"

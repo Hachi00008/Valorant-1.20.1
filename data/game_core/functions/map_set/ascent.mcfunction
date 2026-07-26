@@ -8,8 +8,11 @@
     kill @e[tag=Blue_Pos]
     kill @e[tag=Red_Pos]
 
+# スコア変更
+    #scoreboard players set $MapID GameCore 1
+
 # Red Pos
-    summon armor_stand -358 -11 -121 {Invisible:true,NoBasePlate:true,Small:true,Marker:true,CustomNameVisible:true,CustomName:'{"text":"Red Pos","color":"red"}',Tags:["Red_Pos"]}
+    summon armor_stand -359 -11 -122 {Invisible:true,NoBasePlate:true,Small:true,Marker:true,CustomNameVisible:true,CustomName:'{"text":"Red Pos","color":"red"}',Tags:["Red_Pos"]}
 
 # Blue Pos
-    summon armor_stand -259 -10 -104 {Invisible:true,NoBasePlate:true,Small:true,Marker:true,CustomNameVisible:true,CustomName:'{"text":"Blue Pos","color":"blue"}',Tags:["Blue_Pos"]}
+    summon armor_stand -260 -10 -105 {Invisible:true,NoBasePlate:true,Small:true,Marker:true,CustomNameVisible:true,CustomName:'{"text":"Blue Pos","color":"blue"}',Tags:["Blue_Pos"]}
