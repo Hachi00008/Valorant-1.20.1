@@ -18,3 +18,6 @@
     tp @e[type=armor_stand,tag=Red_Pos] @e[type=armor_stand,tag=Blue_Pos,limit=1]
     tp @e[type=armor_stand,tag=Blue_Pos] @e[type=armor_stand,tag=Current_Pos,limit=1]
     kill @e[type=armor_stand,tag=Current_Pos]
+
+# 13ラウンドならCreditを初期化
+    scoreboard players set @a money 800

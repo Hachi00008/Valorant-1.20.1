@@ -24,6 +24,9 @@
     scoreboard players set $AttackerSide GameCore 1
     scoreboard players set $Time Timer 600
 
+# スコアボード設置
+    scoreboard objectives setdisplay list money
+
 # スパイク処理のリセットもろもろ
     function spike:reset
 

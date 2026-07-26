@@ -17,3 +17,6 @@ tellraw @a [{"storage": "global:","nbt": "Prefix.Info"},{"text": "スパイク�
 
 # ストップウォッチの設定
 scoreboard players set $Timer Spike 0
+
+# Creditの獲得
+    scoreboard players add @s money 300
