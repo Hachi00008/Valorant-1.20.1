@@ -15,7 +15,7 @@ effect give @a lrtactical:blinded 5 0 true
 particle minecraft:explosion ~ ~1 ~
 playsound entity.generic.explode master @a ~ ~ ~ 1.0 0.1
 
-tag @s remove Spike
+#tag @s remove Spike
 function spike:defuse/reset
 
 scoreboard players reset $Defuse Spike

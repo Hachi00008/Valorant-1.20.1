@@ -10,6 +10,7 @@
 # スコアの変更
     scoreboard players set $Time Timer 600
     scoreboard players set @a Health 100
+    scoreboard players add @a money 500
 
 # tp
     tp @a[team=Red] @e[type=armor_stand,tag=Red_Pos,limit=1]

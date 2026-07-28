@@ -27,7 +27,7 @@
     data modify storage asset:item OtherTags.MeleeWeaponId set value "lrtactical:karambit"
     data modify storage asset:item OtherTags.GunDamage set value 7d
     data modify storage asset:item OtherTags.display set value {Name:""}
-    data modify storage asset:item OtherTags.AttributeModifiers set value [{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:0.08,Operation:0,UUID:[I;1773930017,1430080640,-2055983142,257067548],Slot:"mainhand"}]
+    data modify storage asset:item OtherTags.AttributeModifiers set value [{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:0.08,Operation:0,UUID:[I;1773930017,1430080640,-2055983142,257067548],Slot:"mainhand"},{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:7.0,Operation:0,UUID:[I;1773930018,1430080641,-2055983143,257067549],Slot:"mainhand"}]
 
 # アイテム入手
     function asset:item/common/give

@@ -25,5 +25,8 @@
 # ID割り振り
     execute unless score @s PlayerID matches 0.. run function player:provide_player_id
 
-# 
+# キューの削除
+    execute if score @s HurtCount matches 1.. run scoreboard players set @s HurtCount 0
+
+# スパイクプレイヤー処理
     function spike:player_tick

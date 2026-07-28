@@ -8,7 +8,7 @@
 function spike:defuse/reset
 
 # スパイク自体の設置
-tag @s remove Spike
+#tag @s remove Spike
 playsound minecraft:block.anvil.use master @a ~ ~ ~ 5 1 1
 # ログ
 tellraw @a [{"storage": "global:","nbt": "Prefix.Info"},{"text": "スパイクを解除しました。","color": "white"}]

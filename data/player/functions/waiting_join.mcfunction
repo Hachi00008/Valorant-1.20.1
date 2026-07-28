@@ -9,3 +9,6 @@
 
 # テレポート
     tp @s -305 -28 171
+
+    effect give @s weakness infinite 100 true
+    effect give @s resistance infinite 4 true

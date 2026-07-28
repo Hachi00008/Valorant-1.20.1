@@ -45,4 +45,10 @@
 # ゲームモード変更
     gamemode adventure @a
 
-    
+# チームとグループスコアの変更
+    team leave @a
+    scoreboard players reset * Group
+
+# 攻撃不可
+    effect give @a weakness infinite 100 true
+    effect give @a resistance infinite 4 true

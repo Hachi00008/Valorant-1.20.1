@@ -23,3 +23,4 @@
 
 # 体力リセット
     scoreboard players set @s Health 100
+    effect give @s instant_health 1 50 true

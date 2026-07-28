@@ -111,6 +111,13 @@
 # 生存人数
     scoreboard objectives add Alive_Players dummy
 
+# 受けたダメージ回数
+    scoreboard objectives add HurtCount dummy
+
+# チーム分け
+    scoreboard objectives add Group dummy
+    scoreboard objectives add Calc dummy
+
 # Tellraw Prefixの設定
     data modify storage global: Prefix.Info set value "§a[Valorant] INFO>>>§r "
     data modify storage global: Prefix.Caution set value "§e[Valorant] CAUTION>>>§r "
@@ -127,12 +134,12 @@
     # チームの設定
         team modify Red color red
         team modify Red friendlyFire false
-        team modify Red nametagVisibility never
+        team modify Red nametagVisibility hideForOtherTeams
         team modify Red deathMessageVisibility never
 
         team modify Blue color blue
         team modify Blue friendlyFire false
-        team modify Blue nametagVisibility never
+        team modify Blue nametagVisibility hideForOtherTeams
         team modify Blue deathMessageVisibility never
 
 # ボスバー作成(タイマー表示用) ※白色のボスバーのみ対応

@@ -19,6 +19,10 @@
 
     execute on attacker run tellraw @a [{"selector": "@s"},{"text": " ---> "},{"selector": "@a[distance=..0.1,limit=1]"}]
 
+# 死んだ時の武器付与
+    execute if data storage game: {state:"Playing"} run function asset:item/carambit/give/
+    execute if data storage game: {state:"Playing"} run function asset:item/classic/give/
+
 # タグ
     tag @s add Dead
 

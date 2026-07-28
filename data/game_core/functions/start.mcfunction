@@ -51,3 +51,7 @@ clear @a
 # ゲームモード変更
     gamemode adventure @a[team=Red]
     gamemode adventure @a[team=Blue]
+
+# エフェクト解除
+    effect clear @a weakness
+    effect clear @a resistance

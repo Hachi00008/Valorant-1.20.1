@@ -9,3 +9,6 @@
 
 # タグ付与
     tag @a add Shop_Phase
+
+# 全員に残弾無限を付与
+    give @a tacz:ammo_box{AllTypeCreative:1b}

@@ -4,6 +4,9 @@
 #
 # @within function game_core:game_tick/battle_phase/
 
+# デバッグメッセージ
+    tellraw @a ["",{"text": "Finish System"}]
+
 # ラウンド数の追加
     scoreboard players add $GameRound GameCore 1
 
@@ -14,6 +17,9 @@
 # スパイクキル
     kill @e[type=block_display,tag=Spike]
     kill @e[type=item]
+
+# クレジットの入手
+    scoreboard players add @a[tag=Spike_Place] money 300
 
 # 条件分岐
     # オーバータイム時処理
@@ -28,3 +34,4 @@
 # リセット
     scoreboard players reset $MaxGetRound Temporary
     scoreboard players set @a KillCount 0
+    tag @a remove Spike_Place
